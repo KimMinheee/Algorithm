@@ -18,7 +18,6 @@ public class Main {
         String result= String.valueOf(wordList);
         return result;
     }
-
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         String word = scan.nextLine();
