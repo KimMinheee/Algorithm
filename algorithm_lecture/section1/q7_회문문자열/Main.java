@@ -17,9 +17,17 @@ public class Main {
         return "YES";
     }
 
+    public static String solution2(String word){
+        String answer = "NO";
+        String tmp = new StringBuilder(word).reverse().toString();
+        if(tmp.equalsIgnoreCase(word)) answer = "YES";
+
+        return answer;
+    }
+
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         String word = sc.nextLine();
-        System.out.println(solution(word));
+        System.out.println(solution2(word));
     }
 }
