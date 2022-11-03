@@ -3,7 +3,6 @@ package algorithm_lecture.section1.q8_유효한팰린드롬;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Locale;
 
 public class Solution {
     public static String solution(String data){
