@@ -1,8 +1,8 @@
 package algorithm_lecture.section1.q10_가장짧은문자거리;
 
 import java.io.*;
-        import java.util.ArrayList;
-        import java.util.StringTokenizer;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 public class Main {
     public static String solution(String data,char ch){
