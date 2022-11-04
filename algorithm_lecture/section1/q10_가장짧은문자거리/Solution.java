@@ -1,7 +1,6 @@
 package algorithm_lecture.section1.q10_가장짧은문자거리;
 
 import java.io.*;
-import java.nio.BufferOverflowException;
 import java.util.StringTokenizer;
 
 public class Solution {
