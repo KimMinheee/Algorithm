@@ -1,10 +1,9 @@
 package algorithm_lecture.section1.q11_문자열압축;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 public class Main {
     public static String solution(String data){
