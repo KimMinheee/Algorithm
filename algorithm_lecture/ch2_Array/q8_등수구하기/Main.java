@@ -3,31 +3,51 @@ package algorithm_lecture.ch2_Array.q8_등수구하기;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.StringTokenizer;
+import java.util.Collections;
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class Main {
     public static String solution(int num, ArrayList<Integer> arr){
         String answer = "";
-        Collections.sort(arr, Collections.reverseOrder()); //내림차순으로 정렬
-        int cnt = 1; //순위
-        answer += String.valueOf(cnt);
-        System.out.println(arr);
+        ArrayList<Integer> temp = (ArrayList<Integer>)arr.clone();
 
-        //결과값(순위) 산출
-        for(int i = 1; i<num; i++){
-            if(arr.get(i) == arr.get(i-1)){
-                answer += String.valueOf(cnt);
-                continue;
+        Collections.sort(arr, Collections.reverseOrder()); //내림차순으로 정렬
+
+        int rank = 1; //순위
+        //int[] tempRank = new int[num]; //순위 저장하는 int 배열
+        ArrayList<Integer> tempRank = new ArrayList<>(num);
+        int before = -1;// 이전 값
+        int repeatCnt = 0; //반복 횟수
+
+        //정렬 된 상태에서 순서 구하기
+        for(int i=0; i<num; i++){
+            if(arr.get(i) == before){
+                repeatCnt++; //반복 횟수 +1
+                tempRank.add(rank);
             }
-            cnt ++;
-            answer += String.valueOf(cnt);
+            else{ //앞>뒤인 경우
+                rank = rank + repeatCnt;
+                tempRank.add(rank);
+                repeatCnt =1;//0으로 초기화
+            }
+            before = arr.get(i);
         }
 
-        return answer;
 
+        //원래 데이터(정렬x)에서 순서 구하기
+        for(int i=0; i<num; i++){
+            for(int j=0; j<num; j++){
+                if(temp.get(i) == arr.get(j)){
+                    answer = answer + String.valueOf(tempRank.get(j)) + " ";
+                    break;
+                }
+            }
+        }
+        return answer;
     }
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(br.readLine());
@@ -41,4 +61,5 @@ public class Main {
 
         System.out.println(solution(num,arr));
     }
+
 }
