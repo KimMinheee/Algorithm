@@ -9,16 +9,32 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class Main {
-    public static String solution(ArrayList arr1, ArrayList arr2){
+    public static String solution(ArrayList arr1, ArrayList arr2,int num1, int num2){
         String answer ="";
         List resultList = new ArrayList();
+        int p1 =0;//배열1의 포인터
+        int p2 =0;//배열2의 포인터
+
+        Collections.sort(arr1);
+        Collections.sort(arr2);
 
         //같은 수 배열에 넣기
-        for(int i = 0; i<arr2.size();i++){
-            if(arr1.contains(arr2.get(i))){
-                resultList.add(arr2.get(i));
+        while(p1<num1 && p2<num2){
+
+            if((Integer)arr1.get(p1) < ((Integer)arr2.get(p2))){
+                p1++;
+            }
+            else if((int)arr1.get(p1) > (int)arr2.get(p2)){
+                p2++;
+            }
+            else{
+                resultList.add(arr1.get(p1));
+                p1++;
+                p2++;
             }
         }
+
+
         //정렬
         Collections.sort(resultList);
 
@@ -46,7 +62,7 @@ public class Main {
             arr2.add(Integer.parseInt(st.nextToken()));
         }
 
-        System.out.println(solution(arr1,arr2));
+        System.out.println(solution(arr1,arr2,num1,num2));
 
     }
 }
