@@ -13,10 +13,10 @@ public class Main {
         int arr[] = new int[num+1];
 
         //소수 여부 파악
-        for(int i=2; i<num;i++){
+        for(int i=2; i<=num;i++){
             if(arr[i]==0){
                 cnt++; //소수 개수 +1
-                for(int j=i;j<num;j=j+i){
+                for(int j=i;j<=num;j=j+i){
                     arr[j]=1; //소수의 배수인 경우 배열을 1로 변경.
                 }
             }
