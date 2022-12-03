@@ -3,8 +3,6 @@ package algorithm_lecture.ch2_Array.q9_격자판최대합;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Main {
@@ -17,33 +15,33 @@ public class Main {
             temp = temp + arr[i][i];
             answer = temp;
         }
-        System.out.println(temp +" "+ answer);
-        temp = 0;
+        temp = 0; //초기화
+
         //왼->오 대각선의 합
         for(int i=0;i<num;i++){
             temp = temp + arr[num-1-i][i];
-            if(answer>temp) answer = temp;
         }
-        System.out.println(temp +" "+ answer);
-        temp = 0;
+        if(answer<temp) answer = temp;
+        temp = 0; //초기화
+
         //열의 합
         for(int i=0; i<num; i++){
             for(int j=0; j<num; j++){
                 temp = temp+arr[j][i];
             }
-            if(answer>temp) answer = temp;
+            if(answer<temp) answer = temp;
+            temp=0;
         }
-        System.out.println(temp +" "+ answer);
-        temp = 0;
+        temp = 0; //초기화
+
         //행의 합
         for(int i=0; i<num; i++){
             for(int j=0; j<num; j++){
                 temp = temp+arr[i][j];
             }
-            if(answer>temp) answer = temp;
+            if(answer<temp) answer = temp;
+            temp =0;
         }
-        System.out.println(temp +" "+ answer);
-
         return answer;
     }
 
