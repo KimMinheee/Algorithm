@@ -45,6 +45,34 @@ public class Main {
         return answer;
     }
 
+    //코드 개선
+    public static int solution2(int num, int[][]arr){
+        int answer = Integer.MIN_VALUE; //정수 중 가장 작은 값으로 초기화
+        int sum1, sum2;
+
+        //행, 열
+        for(int i=0;i<num;i++){
+            sum1 = sum2 =0;
+            for(int j=0;j<num;j++){
+                sum1 = sum1 + arr[i][j]; //열의 합
+                sum2 = sum2 + arr[j][i]; //행의 합
+            }
+            answer = Math.max(answer,sum1);
+            answer = Math.max(answer,sum2);
+        }
+        sum1 = sum2 = 0;
+        //대각선
+        for(int i=0;i<num;i++){
+                sum1 = sum1 + arr[i][i];
+                sum2 = sum2+ arr[num-1-i][i];
+        }
+        answer = Math.max(answer,sum1);
+        answer = Math.max(answer,sum2);
+
+        return answer;
+
+    }
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(br.readLine());
@@ -59,7 +87,7 @@ public class Main {
             }
         }
 
-        System.out.println(solution(num,arr));
+        System.out.println(solution2(num,arr));
     }
 
 }
