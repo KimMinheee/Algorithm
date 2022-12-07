@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f4d87e40-9d25-4d43-8009-bfb266b9ed75" name="Changes" comment="[Feat] : q6_뒤집은 소수 solution 추가">
+      <change afterPath="$PROJECT_DIR$/algorithm_lecture/ch2_Array/q9_격자판최대합/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm_lecture/ch2_Array/q9_격자판최대합/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm_lecture/ch2_Array/q9_격자판최대합/img.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HOkTdHhRV9C5z2OqwwOgXOnOyt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kimminhee/Algorithm/Algorithm/algorithm_lecture/ch2_Array/q4_피보나치수열&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/algorithm_lecture/ch2_Array/q4_피보나치수열" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm_lecture.ch2_Array.q9_격자판최대합.Main" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithm_lecture.ch2_Array.q9_격자판최대합.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm_lecture.ch2_Array.q6_뒤집은소수.Solution" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithm_lecture.ch2_Array.q6_뒤집은소수.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="algorithm_lecture.ch2_Array.q5_소수에라토스테네스체.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm_lecture.ch2_Array.q5_소수에라토스테네스체.Main" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithm_lecture.ch2_Array.q5_소수에라토스테네스체.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="algorithm_lecture.ch2_Array.q6_뒤집은소수.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm_lecture.ch2_Array.q6_뒤집은소수.Main" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithm_lecture.ch2_Array.q6_뒤집은소수.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="algorithm_lecture.ch3_Twopointers_Slidingwindow.q2_공통원소구하기.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm_lecture.ch3_Twopointers_Slidingwindow.q2_공통원소구하기.Main" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithm_lecture.ch3_Twopointers_Slidingwindow.q2_공통원소구하기.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.algorithm_lecture.ch2_Array.q6_뒤집은소수.Main" />
+        <item itemvalue="Application.algorithm_lecture.ch2_Array.q5_소수에라토스테네스체.Main" />
+        <item itemvalue="Application.algorithm_lecture.ch3_Twopointers_Slidingwindow.q2_공통원소구하기.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f4d87e40-9d25-4d43-8009-bfb266b9ed75" name="Changes" comment="" />
+      <created>1668163529624</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668163529624</updated>
+      <workItem from="1668163538288" duration="719000" />
+      <workItem from="1668173301333" duration="10819000" />
+      <workItem from="1668704696492" duration="299000" />
+      <workItem from="1669038873170" duration="2398000" />
+      <workItem from="1669298227659" duration="4527000" />
+      <workItem from="1669645301888" duration="20664000" />
+      <workItem from="1669960897745" duration="3130000" />
+      <workItem from="1670077892914" duration="569000" />
+    </task>
+    <task id="LOCAL-00001" summary="[Feat] : q4_피보나치 수열 solved.">
+      <created>1668174698907</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668174698907</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[Feat] : q12_암호 solution 추가">
+      <created>1668226023656</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668226023656</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[Feat] : q8_등수 구하기 solving">
+      <created>1668435866499</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668435866499</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[Feat] : q8_등수 구하기 solved.">
+      <created>1669038928272</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669038928272</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[Feat] : q7_점수 계산 solved.">
+      <created>1669127626726</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669127626726</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[Feat] : q1_두 배열 합치기 solved.">
+      <created>1669300356120</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669300356120</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[Feat] : q2_공통원소 구하기 solving">
+      <created>1669646860442</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669646860442</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[Feat] : q2_공통원소 구하기 solved.">
+      <created>1669733566160</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669733566160</updated>
+    </task>
+    <task id="LOCAL-00009" summary="[Feat] : q5_소수(에라토스테네스 체) solution">
+      <created>1669819498016</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669819498016</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[Feat] : q5_소수(에라토스테네스 체) 배열 크기 변경">
+      <created>1669820172028</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669820172029</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[Feat] : q6_뒤집은 소수 solved.">
+      <created>1669916457771</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669916457771</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[Feat] : q5_소수(에라토스테네스 체) for문 조건 수정">
+      <created>1669959616968</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669959616968</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[Feat] : q6_뒤집은 소수 solution 추가">
+      <created>1669963627106</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669963627109</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[Feat] : q4_피보나치 수열 solved." />
+    <MESSAGE value="[Feat] : q12_암호 solution 추가" />
+    <MESSAGE value="[Feat] : q8_등수 구하기 solving" />
+    <MESSAGE value="[Feat] : q8_등수 구하기 solved." />
+    <MESSAGE value="[Feat] : q7_점수 계산 solved." />
+    <MESSAGE value="[Feat] : q1_두 배열 합치기 solved." />
+    <MESSAGE value="[Feat] : q2_공통원소 구하기 solving" />
+    <MESSAGE value="[Feat] : q2_공통원소 구하기 solved." />
+    <MESSAGE value="[Feat] : q5_소수(에라토스테네스 체) solution" />
+    <MESSAGE value="[Feat] : q5_소수(에라토스테네스 체) 배열 크기 변경" />
+    <MESSAGE value="[Feat] : q6_뒤집은 소수 solved." />
+    <MESSAGE value="[Feat] : q5_소수(에라토스테네스 체) for문 조건 수정" />
+    <MESSAGE value="[Feat] : q6_뒤집은 소수 solution 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Feat] : q6_뒤집은 소수 solution 추가" />
+  </component>
+</project>
