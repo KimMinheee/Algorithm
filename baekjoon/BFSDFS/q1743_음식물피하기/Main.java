@@ -1,4 +1,4 @@
-package Baekjoon.BFSDFS.q1743_음식물피하기;
+package baekjoon.BFSDFS.q1743_음식물피하기;
 
 import java.io.*;
 import java.util.StringTokenizer;
