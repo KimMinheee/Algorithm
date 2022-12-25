@@ -8,8 +8,9 @@ import java.io.InputStreamReader;
 public class Main {
     public static void solution(int num){
         if(num==0) return;
-        System.out.print(num+" ");
         solution(num-1);
+        System.out.print(num+" ");
+
     }
 
     public static void main(String[] args) throws IOException {
