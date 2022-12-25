@@ -7,43 +7,54 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main {
+class Node{
+    int x; //x값(행)
+    int y; //y값(열)
+    int data; //누적 거리 값
+
+    public Node(int x, int y, int data){
+        this.x = x;
+        this.y = y;
+        this.data = data;
+    }
+}
+
+public class Solution {
     static int[][] map;
     static boolean[][] visited;
     static int[][] dd = {{1,0},{0,1},{-1,0},{0,-1}}; //하,우,상,좌
-    static int cnt = 0;
+    static int cnt = 1;
 
-    //문제에 주어진 테스트케이스는 통과하지만 그 외는 통과 x
     public static void bfs(int m, int n){
-        Queue que = new LinkedList<>(); //큐
-
-        //시작점 큐에 넣고 방문처리
-        que.offer(new int[] {0,0});
-        visited[0][0] = true;
+        Queue que = new LinkedList<>();
+        que.offer(new Node(0,0,1));
+        visited[0][0] = true; //방문처리
 
         while(!que.isEmpty()){
-            int[] temp = (int[]) que.poll(); //큐에서 꺼내기
-            visited[temp[0]][temp[1]] = true; //방문처리
-            cnt++;
+            Node node = (Node)que.poll();
+            visited[node.x][node.y] = true;
 
-            //하,우,상,좌 이동
+            if(node.x==(m-1) && node.y == (n-1)) { //종료지점에 도달하면 data값 출력 후 종료
+                System.out.println(node.data);
+                return;
+            }
+
+            cnt = node.data+1; //누적 거리값 +1
+
+            //현재 노드 기준 하,우,상,좌 순으로 노드 탐색
             for(int i=0; i<4; i++){
-                int dx = temp[0]+dd[i][0]; //x좌표
-                int dy = temp[1]+dd[i][1]; //y좌표
+                int dx = node.x + dd[i][0];
+                int dy = node.y + dd[i][1];
 
                 if(dx<0 || dy<0 || dx>=m || dy>=n) continue;
 
-                if(map[dx][dy]==1 && visited[dx][dy]==false && dx>=temp[0] && dy>=temp[1]){
-                    que.offer(new int[]{dx,dy});
-                }
+                if(map[dx][dy] == 1 && visited[dx][dy] == false) que.offer(new Node(dx,dy,cnt));
             }
         }
-        System.out.println(cnt);
 
     }
 
-
-    public static void main(String[] args)throws IOException {
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         int m = Integer.parseInt(st.nextToken()); //행의 개수
@@ -58,7 +69,6 @@ public class Main {
                 map[i][j] = Integer.parseInt(data[j]);
             }
         }
-
         bfs(m,n);
     }
 }
