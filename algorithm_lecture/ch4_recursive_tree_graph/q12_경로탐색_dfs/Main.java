@@ -18,6 +18,7 @@ public class Main {
 
         if(data == n){
             answer++;
+            System.out.println(Arrays.toString(visited));
         }
 
         for(int i =1; i<=n; i++){
@@ -25,6 +26,18 @@ public class Main {
         }
 
         visited[data] = false;
+        return answer;
+    }
+
+    public static int dfs2(int data){
+        if(data == n) answer++;
+        for(int i=1; i<=n; i++){
+            if(graph[data][i] ==1 && visited[i]==false){
+                visited[i] = true;
+                dfs2(i);
+                visited[i] = false; //dfs 함수 하나 다 돌면 false로 바꿔 줌.
+            }
+        }
         return answer;
     }
 
