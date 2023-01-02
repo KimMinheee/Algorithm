@@ -1,7 +1,6 @@
 package baekjoon.BFSDFS.q1743_음식물피하기;
 
 import java.io.*;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Main
@@ -58,7 +57,7 @@ public class Main
         int k = Integer.parseInt(st.nextToken());
 
         map = new int[m][n]; //default : 0
-        visited = new boolean[m][m];
+        visited = new boolean[m][n];
 
         for(int i=0; i<k; i++){ //음식물 쓰레기의 개수
             st = new StringTokenizer(br.readLine());
