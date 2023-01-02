@@ -1,8 +1,8 @@
 package baekjoon.BFSDFS.q1743_음식물피하기;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.StringTokenizer;
-import java.util.*;
 
 public class Main
 {
@@ -12,8 +12,10 @@ public class Main
     public static int max=0; //max
     public static int[] dx = {0,0,-1,1}; //좌우상하
     public static int[] dy = {-1,1,0,0}; //좌우상하
+    public static int m; //행 개수
+    public static int n; //열 개수
 
-    public static void solution(int m, int n){
+    public static void solution(){
         //좌표는 (0,0) ~ (m-1,n-1)로 설정.
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
@@ -27,34 +29,32 @@ public class Main
         }
 
     }
-    public static void dfs(int m, int n){
+    public static void dfs(int i, int j){
         int mx ;
         int my ;
         cnt++;
-        visited[m][n] = true;
-        System.out.println("들어옴"+m+" "+n);
+        visited[i][j] = true;
 
-        for(int i=0; i<4; i++){ //좌우상하 4번
-            mx = m + dx[i];
-            my = n + dy[i];
+        for(int k=0; k<4; k++){ //좌우상하 4번
+            mx = i + dx[k];
+            my = j + dy[k];
 
             if(mx>=0 && my>=0 && mx<m && my<n){ //범위 안
-                System.out.println(mx+" "+my+"웩");
-                if(map[mx][my] ==1 && !visited[mx][my]){
+                if(map[mx][my] ==1 && visited[mx][my]==false){
                     dfs(mx,my);
                 }
             }
+
         }
     }
 
     public static void main(String[] args) throws IOException
     {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw  = new BufferedWriter(new OutputStreamWriter(System.out));
 
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int m = Integer.parseInt(st.nextToken());
-        int n = Integer.parseInt(st.nextToken());
+        m = Integer.parseInt(st.nextToken());
+        n = Integer.parseInt(st.nextToken());
         int k = Integer.parseInt(st.nextToken());
 
         map = new int[m][n]; //default : 0
@@ -67,12 +67,9 @@ public class Main
             map[a-1][b-1] = 1; //음식물이 있는 좌표는 1
         }
 
-        System.out.println(Arrays.deepToString(map));
+        solution();
 
-        solution(m,n);
+        System.out.println(max);
 
-        bw.write(max);
-        bw.flush();
-        bw.close();
     }
 }
