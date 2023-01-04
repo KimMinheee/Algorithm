@@ -35,6 +35,24 @@ public class Main {
             if(isChange) cnt++;
         }
     }
+    public static void bfs2(int data){
+        Queue que = new LinkedList();
+        que.offer(data);
+
+        while(!que.isEmpty()){
+            int num =(int)que.poll();
+
+            for(int a : graph.get(num)){
+                if(visited[a]==false){
+                    que.offer(a);
+                    visited[a] = true;
+                    arr[a] = arr[num]+1;
+                }
+            }
+
+        }
+    }
+
 
     public static void main(String[] args)throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -58,7 +76,7 @@ public class Main {
             graph.get(a).add(b);
         }
         visited[1]= true;
-        bfs(1);
+        bfs2(1);
         for(int i=2; i<=n; i++){
             System.out.println(i+" : "+arr[i]);
         }
