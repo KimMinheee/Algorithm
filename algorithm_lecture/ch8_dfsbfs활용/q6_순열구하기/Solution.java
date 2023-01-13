@@ -37,7 +37,6 @@ public class Solution {
         check = new int[N];
         answer = new int[M];
 
-
         st = new StringTokenizer(br.readLine());
         for(int i=0; i<N;i++){
             data[i] = Integer.parseInt(st.nextToken());
