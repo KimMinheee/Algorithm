@@ -5,6 +5,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
+/**
+ * 개선할 점 :
+ * 1. ArrayList 정렬 기준 바꿔서 맨 앞이 아니라 뒤 부터 삭제될 수 있도록 해서 시간 줄이기
+ * 2. 35번 라인에서 i==0으로 분기처리한 거 안깔끔한 거 같음. 그냥 함수처리로 묶기.
+ */
 public class Main {
     static int N,M;
     static Integer[] recs;
