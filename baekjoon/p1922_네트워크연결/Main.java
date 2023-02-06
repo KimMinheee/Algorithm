@@ -50,11 +50,14 @@ public class Main {
 
         return answer;
     }
+
+    //union
     static void union(int a, int b){
         int aRoot = find(a);
         int bRoot = find(b);
-        parent[aRoot] = bRoot;
+        parent[bRoot] = aRoot;
     }
+    //find
     static int find(int a){
         if(parent[a] == a) return a; //이미 루트노드;
         else{
