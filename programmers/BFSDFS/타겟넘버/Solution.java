@@ -1,4 +1,4 @@
-package programmers.타겟넘버;
+package programmers.BFSDFS.타겟넘버;
 
 class Solution {
     static boolean[] visited;
