@@ -5,7 +5,6 @@ import java.util.*;
 public class Solution {
     public int[] solution(int []arr) {
         List<Integer> answerList = new ArrayList<Integer>();
-        StringBuilder sb = new StringBuilder();
         int tmp = arr[0];
         answerList.add(tmp);
 
