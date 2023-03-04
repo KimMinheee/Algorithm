@@ -19,12 +19,12 @@ public class Main {
 
         for(int i=1; i<n+1; i++){
             answer[0] = i;
-            dfs(i,0);
+            dfs(i,1);
         }
 
         System.out.println(sb.toString());
     }
-    static void dfs(int idx, int depth){
+    static void dfs(int num, int depth){
         if(depth == m){
             for(int a : answer){
                 sb.append(a+" ");
@@ -33,7 +33,7 @@ public class Main {
             return;
         }
 
-        for(int i=idx; i<n+1; i++){
+        for(int i=num; i<n+1; i++){
             answer[depth] = i;
             dfs(i,depth+1);
         }
