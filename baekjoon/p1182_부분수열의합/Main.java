@@ -5,6 +5,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/**
+ * p1182_부분수열의 합
+ * :S == 0 일때, 아무것도 더하지 않는 경우는 -1 해줘야 한다.
+ */
+
 public class Main{
     static int N,S;
     static int[] data;
