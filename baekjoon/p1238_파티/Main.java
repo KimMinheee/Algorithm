@@ -35,17 +35,17 @@ public class Main {
             dijkstra(i);
         }
 
-        int answer = 0;
+
+        int answer = -1;
         //정점별 왕복거리를 구하고 최댓값 확인
         for(int i=1; i<=N; i++){
+            if(i==X) continue;
             int wayGo = shortestDist.get(i)[X];
             int wayBack = shortestDist.get(X)[i];
             answer = Math.max(answer,(wayGo+wayBack));
         }
 
         System.out.println(answer);
-        br.close();
-
     }
     static void dijkstra(int node){
         boolean[] check = new boolean[N+1];
@@ -70,12 +70,11 @@ public class Main {
                     //방문처리 다시 확인
                     if(!check[tmp.dest]){
                         dist[tmp.dest] = Math.min(dist[tmp.dest],dist[edge.dest]+tmp.cost); //원래, new
-                        pq.add(tmp);
+                        pq.add(new Edge(tmp.dest, dist[tmp.dest])); //새로 갱신된 값 저장
                     }
                 }
             }
         }
-
         //리스트에 저장
         for(int i=1; i<=N; i++){
             shortestDist.get(node)[i] = dist[i];
