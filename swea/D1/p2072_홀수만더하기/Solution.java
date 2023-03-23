@@ -1,4 +1,4 @@
-package swea.p2072_홀수만더하기;
+package swea.D1.p2072_홀수만더하기;
 
 import java.io.*;
 import java.util.*;

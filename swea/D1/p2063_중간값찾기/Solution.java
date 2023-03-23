@@ -1,4 +1,4 @@
-package swea.p2063_중간값찾기;
+package swea.D1.p2063_중간값찾기;
 
 
 import java.util.*;

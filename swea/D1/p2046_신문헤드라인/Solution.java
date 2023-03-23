@@ -1,4 +1,4 @@
-package swea.p2046_신문헤드라인;
+package swea.D1.p2046_신문헤드라인;
 
 import java.io.*;
 

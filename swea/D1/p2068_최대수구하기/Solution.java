@@ -1,4 +1,4 @@
-package swea.p2068_최대수구하기;
+package swea.D1.p2068_최대수구하기;
 
 import java.util.*;
 import java.io.*;

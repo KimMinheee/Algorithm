@@ -1,4 +1,4 @@
-package swea.p2058_자릿수더하기;
+package swea.D1.p2058_자릿수더하기;
 
 import java.util.*;
 
