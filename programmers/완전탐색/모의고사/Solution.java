@@ -20,7 +20,7 @@ class Solution {
             int correctCnt = 0;
             while(true){
                 if(answers.length == idx) break;
-                if(answers[idx%students[i].length] == students[i][idx%students[i].length]) correctCnt++;
+                if(answers[idx] == students[i][idx%students[i].length]) correctCnt++;
                 idx++;
             }
             values[i] = correctCnt;
@@ -31,6 +31,7 @@ class Solution {
             if(values[i] == max) answer.add(i+1);
         }
         //System.out.println(answer.toArray());
+        Collections.sort(answer);
 
         return answer.stream()
                 .mapToInt(Integer::intValue)
