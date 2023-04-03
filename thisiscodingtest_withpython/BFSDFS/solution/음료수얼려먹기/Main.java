@@ -1,4 +1,4 @@
-package thisiscodingtest_withpython.bfs_dfs.solution.음료수얼려먹기;
+package thisiscodingtest_withpython.BFSDFS.solution.음료수얼려먹기;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package thisiscodingtest_withpython.bfs_dfs.basic;
+package thisiscodingtest_withpython.BFSDFS.basic;
 
 import java.util.ArrayList;
 

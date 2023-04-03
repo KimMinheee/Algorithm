@@ -1,4 +1,4 @@
-package thisiscodingtest_withpython.bfs_dfs.solution.미로탈출;
+package thisiscodingtest_withpython.BFSDFS.solution.미로탈출;
 
 import java.io.BufferedReader;
 import java.io.IOException;
