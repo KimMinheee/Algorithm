@@ -2,6 +2,10 @@ package thisiscodingtest_withpython.DP.p2_1로만들기;
 
 import java.io.*;
 import java.util.*;
+
+/**
+ * DP 이용
+ */
 public class Solution {
     public static void main(String[] args)throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
