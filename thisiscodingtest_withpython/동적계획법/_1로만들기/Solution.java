@@ -1,7 +1,6 @@
-package thisiscodingtest_withpython.DP.p2_1로만들기;
+package thisiscodingtest_withpython.동적계획법._1로만들기;
 
 import java.io.*;
-import java.util.*;
 
 /**
  * DP 이용
