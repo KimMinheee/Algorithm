@@ -2,7 +2,7 @@ package programmers.그리디.큰수만들기;
 
 import java.util.*;
 
-class Solution {
+class Solution2 {
     public String solution(String number, int k) {
         StringBuilder sb = new StringBuilder();
         int num = number.length() - k;

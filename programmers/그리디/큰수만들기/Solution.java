@@ -3,7 +3,7 @@ package programmers.그리디.큰수만들기;
 import java.util.*;
 
 /*
-- 배열의 순서는 계속 가지고 가야됨.
+- !!! TLE 생기는 코드임. -> Solution2파일 참고
 */
 
 class Solution {
