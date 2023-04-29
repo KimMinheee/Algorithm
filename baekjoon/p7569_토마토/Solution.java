@@ -3,7 +3,7 @@ package baekjoon.p7569_토마토;
 /**
  * BOJ7569 - 토마토
  * : 2차 개선 코드
- * - BFS 사용
+ * - BFS 사용 & 3차원 배열
  */
 
 import java.util.*;
