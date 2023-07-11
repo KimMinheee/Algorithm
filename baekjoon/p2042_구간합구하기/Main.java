@@ -1,11 +1,11 @@
 package baekjoon.p2042_구간합구하기;
 
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Main {
@@ -64,10 +64,11 @@ public class Main {
         tree[node] += diff;
         if (left != right) {
             int mid = (left + right) / 2;
-            update(left, mid, node * 2, target, diff);
-            update(mid + 1, right, node * 2 + 1, target, diff);
+            update(left, mid, node * 2, target, diff); //왼쪽 자식
+            update(mid + 1, right, node * 2 + 1, target, diff); //오른쪽 자식노드
         }
-    }
+    }//top-down
+
 
     static void init() {
         // leaf는 data로
@@ -78,17 +79,25 @@ public class Main {
         for (int i = S - 1; i > 0; i--) {
             tree[i] = tree[i * 2] + tree[i * 2 + 1];
         }
-    }
+    }//bottom up
 
+
+    //2 -5
     static long query(int left, int right, int node, int queryLeft, int queryRight) {
+        //아예 범위를 벗어난 경우
         if (queryLeft > right || queryRight < left) {
             return 0;
         }
+
+        //완전히 포함되는 경우
         if (queryLeft <= left && right <= queryRight) {
             return tree[node];
         }
+
         int mid = (left + right) / 2;
+        //중간에 걸쳐진 경우
+        //node*2 -> 왼쪽 자식 노드 , node*2 +1 오른쪽 자식 노드
         return query(left, mid, node * 2, queryLeft, queryRight) +
                 query(mid + 1, right, node * 2 + 1, queryLeft, queryRight);
-    }
+    }//top-down
 }
